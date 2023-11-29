@@ -1,0 +1,581 @@
+/* grid */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-inner-container {
+  display: grid;
+  grid-template:
+    "section" 400px
+    "section" 250px
+    "section" 400px
+    "section" 400px
+    "section" 300px;
+    min-width: 100%;
+}
+/*Til toppen kanppen, lenke i html*/
+#to-the-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #000;
+  background-color: #000;
+  border: 1px solid #000; 
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 1000;
+}
+
+/* Indexsite */
+
+/* Grid item 1 */
+/*Video css, lenke til hvor jeg fant dette ligger i html*/
+video {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  filter: opacity(40%);
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  margin: 0 25%;
+  top: 22%;
+}
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: 1000;
+}
+.overlay p {
+  text-align: center;
+}
+.button-overlay {
+  padding: 0.5rem 4rem;
+  font-size: large;
+  font-weight: bolder;
+  color: #000;
+  align-items: center;
+  background-color: #e6bd43;
+  text-decoration: none;
+}
+.button-overlay {
+  background-color: #e6bd43;
+  border: none;
+  font-weight: 1000;
+}
+/*Hovereffekter, her er lenke til hvor jeg fant det*/
+/* https://www.w3schools.com/cssref/sel_hover.php */
+.button-overlay:hover {
+  background-color: #000;
+  color: #e6bd43;
+  border: 1px solid black;
+}
+
+/* grid item 2 */
+.engaging {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.engaging h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 1000;
+  margin-bottom: 2rem;
+}
+.engagning > * {
+  margin: 0 15%;
+}
+.engaging > p {
+  padding-top: 1rem;
+  text-align: center;
+}
+.inner-container {
+  margin: 0 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Grid item 3*/
+.header-service {
+  margin-bottom: 2rem;
+}
+.our-services {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  background-color: #e6bd43;
+}
+.header-service p {
+  margin-bottom: 1rem;
+}
+.our-services > img {
+  height: 250px;
+  margin-left: 4rem;
+  width: auto;
+}
+.button-service {
+  display: flex;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 1000;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  border: 2px solid black;
+  width: 13rem;
+  padding: 1rem;
+}
+.button-service:hover {
+  background-color: #000;
+  color: #e6bd43;
+  border: 1px solid black;
+}
+
+/* grid item 4 */
+.our-services-symbols {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4rem;
+}
+.our-services-symbols h1 {
+  font-size: 3rem;
+  font-weight: 1000;
+}
+.our-services-symbols div {
+  display: flex;
+  column-gap: 1rem;
+  width: 100%;
+}
+.our-services-symbols div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+.our-services-symbols i{
+  font-size: 2rem;
+}
+.our-services-symbols p{
+  text-align: center;
+}
+.our-text {
+  align-items: center;
+  font-weight: 1000;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* grid item 5 */
+.newsletter {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter h2 {
+  font-size: 3rem;
+  font-weight: 1000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.newsletter input {
+  padding: 1rem;
+  margin-left: 25%;
+}
+.sign-up {
+  background-color: #e6bd43;
+  border: none;
+  font-weight: 1000;
+  padding: 0.3rem 0.5rem;
+}
+.sign-up:hover {
+  background-color: #000;
+  color: #e6bd43;
+  border: 1px solid black;
+  }
+
+/* Aboutsite*/
+
+/* grid item 1 */
+.main-inner-container-about {
+  display: grid;
+  grid-template:
+    "section" 400px
+    "section" 500px
+    "section" 400px
+    "section" 800px
+    "section" 200px;
+    min-width: 100%;
+}
+
+.header_image {
+  /*Bilde som dekker hele bakgrunnen, bildet ligger i img mappen*/
+  background-image: url('../img/photo-of-iphone.jpg');    
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: right 20%;
+}
+.header_image section {
+  padding: 5rem 5rem;
+  margin: 4rem;
+  background: rgba(500, 255, 255, 0.7);
+}
+.company-name h2 {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+.company-button {
+  margin-top: 20px;
+  font-weight: 1000;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e6bd43;
+  color: #000;
+  text-decoration: none;
+}
+.company-button:hover {
+  background-color: black; 
+  color: #e6bd43;
+}
+
+/* grid item 2 */
+.our-services-symbols-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4rem;
+}
+.our-services-symbols-about h1 {
+  font-size: 3rem;
+  font-weight: 1000;
+}
+.our-services-symbols-about div {
+  display: flex;
+  column-gap: 1rem;
+  width: 100%;
+}
+.our-services-symbols-about div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+.our-services-symbols-about i{
+font-size: 2rem;
+}
+.our-services-symbols-about p{
+  text-align: center;
+}
+.our-text-about {
+  align-items: center;
+  font-weight: 1000;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* grid item 3 */
+.some-of-our-container {
+  display: flex;
+  background-color: #e6bd43;
+}
+.image-container img {
+
+  width: 250px;
+  height: 250px;
+}
+.some-of-our-container {
+  background-color: #e6bd43;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* grid item 4 */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.section-form {
+  grid-template-columns: (2fr, 1fr);
+  display: block;
+  background-color: lightgray;
+}
+.form-p-about {
+  padding: 3rem 1rem 1rem 15rem;
+  font-size: 20px;
+  font-weight: 1000;
+}
+.about-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 1rem 0rem 0rem 15rem;
+}
+.about-form input, br{
+  margin-bottom: 1rem;
+}
+#name {
+  width: 555px;
+  border: #fff;
+  padding: 1rem;
+}
+#subject {
+  width: 555px;
+  border: #fff;
+  padding: 1rem;
+}
+section article form textarea {
+  margin-bottom: 1rem;
+  width: 585px;
+  height: 150px;
+  border: #fff;
+}
+.form-btn-about {
+  border: solid 1px #e6bd43;
+  background-color: #e6bd43;
+  width: 8rem;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+  font-weight: 1000;
+}
+.form-btn-about:hover {
+  background-color: #000;
+  color: #e6bd43;
+  border: 1px solid black;
+}
+.contact-article-2 {
+  position: sticky;
+  top: 225%;
+  left: 50%;
+  transform: translate(0%, -233%);
+  width: 40%;
+}
+.section-form {
+  height: 800px;
+}
+.contact-info-about {
+  margin-top: -10rem;
+  margin-bottom: 3rem;
+  font-size: 20px;
+  padding: 0rem;
+  font-weight: 1000;
+}
+.contact-info-p {
+  margin-bottom: 15rem;
+  padding: 0rem;
+  font-size: 18px;
+}
+.contact-icons {
+  padding: 0rem;
+}
+section article ul li {
+  font-size: 20px;
+  padding: 1rem 0rem 0rem 0rem;
+}
+section article ul li i {
+  font-size: 20px;
+  padding: 0rem 2rem 0rem 0rem;
+}
+
+/* Productsite */
+.inner-container-about {
+  display: grid;
+  grid-template:
+    "section" 400px
+    "section" 120px
+    "section" 120px
+    "section" 140px
+    "section" 300px;
+  min-width: 100%;
+}
+.main-header-products img {
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.5);
+}
+.main-header-products h2 {
+  position: absolute;
+  font-size: 3rem;
+  top: 30%;
+  text-align: center;
+  width: 100%;
+}
+.overlay-products {
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* grid item 2 */
+.explore-text p {
+  display: flex;
+  font-weight: 1000;
+  margin: 2rem;
+  font-size: 3rem;
+  color: #000;
+  border-bottom: 0.5rem solid #e6bd43;
+  width: 98%;
+  box-sizing: border-box;
+}
+.prod-nav {
+  display: inline;
+  margin: 2rem;
+}
+.a1 {
+  border: 1px solid black;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+}
+.a1:hover {
+  background-color: #000;
+  color: #e6bd43;
+  border: 1px solid black;
+}
+.a2 {
+  border: 1px solid black;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+}
+.a2:hover {
+  background-color: #000;
+  color: #e6bd43;
+  border: 1px solid black;
+}
+.a3 {
+  border: 1px solid black;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+}
+.a3:hover {
+  background-color: #000;
+  color: #e6bd43;
+  border: 1px solid black;
+}
+
+/* grid item 3 */
+.branding-text {
+  display: flex;
+  font-weight: 1000;
+  margin: 2rem;
+  font-size: 3rem;
+  color: #000;
+  border-bottom: 0.5rem solid #e6bd43;
+  width: 98%;
+  box-sizing: border-box;
+}
+.branding-pic {
+  display: flex;
+  align-items: center;
+}
+.branding-pic img {
+  width: 100%;
+  height: 100%;
+  transition: transform 1.5s ease;
+}
+.branding-pic img:hover {
+  transform: scale(1.1);
+}
+.branding-pic p {
+  display: none;
+}
+
+/* grid item 4 */
+.big-pic img {
+  margin: 2rem;
+  margin-left: 10rem;
+  width: 30%;
+  height: 100%;
+  transition: transform 1.5s ease;
+}
+.big-pic img:hover {
+  transform: scale(1.1);
+}
+
+.big-pic p {
+  display: none;
+}
+
+/* grid item 5 */
+.design-text {
+  display: flex;
+  font-weight: 1000;
+  margin: 2rem;
+  font-size: 3rem;
+  color: #000;
+  border-bottom: 0.5rem solid #e6bd43;
+  width: 98%;
+  box-sizing: border-box;
+}
+.design-pic {
+  display: flex;
+  align-items: center;
+}
+.design-pic img {
+  width: 100%;
+  height: 70%;
+  transition: transform 1.5s ease;
+}
+.design-pic img:hover {
+  transform: scale(1.1);
+}
+.design-pic p{
+  display: none;
+}
+
+/* grid item 6 */
+.development-text {
+  display: flex;
+  font-weight: 1000;
+  margin: 2rem;
+  font-size: 3rem;
+  color: #000;
+  border-bottom: 0.5rem solid #e6bd43;
+  width: 98%;
+  box-sizing: border-box;
+}
+.development-pic {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.development-pic img {
+  width: 100%;
+  height: 70%;
+  transition: transform 1.5s ease;
+}
+.development-pic img:hover {
+  transform: scale(1.1);
+}
+.development-pic p {
+  display: none;
+}

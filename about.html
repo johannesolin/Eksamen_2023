@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="beskrivelse av nettside"/>
+<meta name="keywords" content="nøkkelord plasseres her"/>
+<meta name="author" content="Johannes Olin"/>
+
+<!-- Protokoll metadata -->
+<meta property="og:title" content="Eksamen_23"/>
+<meta property="og:description" content="beskrivelse av nettsiden"/>
+<meta property="og:image" content="lenke til nettsidens hovedbilde"/>
+<meta property="og:url" content="nettsidens lenke"/>
+<meta property="og:type" content="nettside/nettbutikk"/>
+
+<!-- Twitter metadata -->
+<meta name="twitter:card" content="stort bilde"/>
+<meta name="twitter:title" content="Eksamen_23"/>
+<meta name="twitter:description" content="beskriveslse av nettsiden"/>
+<meta name="twitter:image" content="nettsidens hovedbilde"/>
+
+<link rel="stylesheet" href="css/layout.css"/>
+<link rel="stylesheet" href="css/nav.css"/>
+<link rel="stylesheet" href="css/footer.css"/>
+<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="css/mobile.css"/>
+
+<!-- Favicon -->
+<link rel="icon" href="img/logo.png" type="favicon" />
+
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/322da8a229.js" crossorigin="anonymous"></script>
+
+<title>Eksamen_23</title>
+</head>
+
+<body>
+  <div class="container">
+  <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+    <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <div class="nav_image" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+     <a href="index.html">
+      <img src="img/logo.png" alt="logo" itemprop="url" />
+     </a>
+     <meta itemprop="width" content="400">
+      <meta itemprop="height" content="200">
+     </div>
+     <ul class="buttons" role="menubar">
+        <li itemprop="name"><a href="index.html" class="active_" itemprop="url">Home</a></li>
+        <li itemprop="name"><a href="products.html" class="active_" itemprop="url">Portfolio</a></li>
+        <li itemprop="name"><a href="about.html" class="active" itemprop="url">About</a></li>
+        <li itemprop="name"><a href="about.html#contact-us" class="contact" itemprop="url">Contact</a></li>
+      </ul>
+      <a href="#header"><i id="to-the-top" class="fa-solid fa-arrow-up"></i></a>
+    </nav>
+  </header>
+
+<main>
+  <div class="main-inner-container-about">
+    <section id="main-header-foto" class="header_image" itemscope itemtype="http://schema.org/Organization">
+      <section class="company-name" itemprop="mainEntity" itemscope itemtype="http://schema.org/AboutPage">
+        <p itemprop="name">Company name</p>
+        <h2 itemprop="headline">About Our Company</h2>
+        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+        <p itemprop="description">
+        sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.
+        </p>
+        <p itemprop="description">
+        Consectetur adipiscing elit ut aliquam purus sit amet luctus.
+        </p>
+        <p itemprop="description">Maecenas sed enim ut sem viverra aliquet eget sit amet.</p>
+      <a class="company-button" href="#contact-us" itemprop="url">Get in touch with us</a>
+    </section>
+  </section>          
+
+  <section class="our-services-symbols-about" itemscope itemtype="http://schema.org/Service">
+    <h1 itemprop="name">Our Services</h1>
+      <div itemprop="mainEntityOfPage" itemscope itemtype="http://schema.org/ItemList">
+      <div itemprop="itemListElement" itemscope itemtype="http://schema.org/Service">
+      <i class="fa-solid fa-people-group"></i>
+      <p class="our-text-about" itemprop="name">Branding</p>
+    <p itemprop="description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      consectetur adipiscing elit
+    </p>
+  </div>
+    <div itemprop="itemListElement" itemscope itemtype="http://schema.org/Service">
+    <i class="fa-solid fa-cloud-arrow-up"></i>
+    <p class="our-text-about" itemprop="name">Branding</p>
+    <p itemprop="description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      consectetur adipiscing elit
+    </p>
+  </div>
+    <div itemprop="itemListElement" itemscope itemtype="http://schema.org/Service">
+    <i class="fa-solid fa-code"></i>
+    <p class="our-text-about" itemprop="name">Branding</p>
+    <p itemprop="description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      consectetur adipiscing elit
+  </p>
+  </div>
+    <div itemprop="itemListElement" itemscope itemtype="http://schema.org/Service">
+    <i class="fa-solid fa-wifi"></i>
+    <p class="our-text-about" itemprop="name">Branding</p>
+    <p itemprop="description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      consectetur adipiscing elit
+    </p>
+    </div>
+  </div>
+  </section>
+
+
+  <section class="some-of-our" itemscope itemtype="http://schema.org/Organization">
+    <div class="some-of-our-container">
+    <h2 itemprop="name">Some of our clients</h2>
+      <div class="image-container">
+        <img src="img/logo.png" alt="logo" itemprop="logo" />
+        <img src="img/logo1.png" alt="logo" itemprop="logo" />
+        <img src="img/logo3.png" alt="logo" itemprop="logo" />
+      </div>
+  </div>
+  </section>
+
+  <section id="contact-us" class="section-form" itemscope itemtype="http://schema.org/ContactPage">
+    <h3 id="contact" itemprop="headline">Contact us</h3>
+      <article itemprop="mainEntity" itemscope itemtype="http://schema.org/ContactPoint">
+        <p class="form-p-about" itemprop="description">Send us a message</p>
+        <form class="about-form">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" value="Ola Nordmann" itemprop="givenName" /><br>
+        <label for="subject">Subject</label><br>
+        <input type="text" id="subject" name="subject" value="Branding.." itemprop="about" /><br>
+        <label>Message</label><br>
+        <textarea name="message" rows="10" cols="30" itemprop="comment"></textarea>
+        <a type="submit" value="Send message" class="form-btn-about" itemprop="url">Send message</a>
+        </form>
+    </article>
+  </section>
+
+  <article class="contact-article-2" itemscope itemtype="http://schema.org/ContactPoint">
+    <p class="contact-info-about" itemprop="headline">Contact information</p>
+    <p class="contact-info-p" itemprop="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint </p>
+      <ul class="contact-icons">
+        <li><i class="fa-solid fa-location-pin"></i> <span itemprop="address">B R A Veien 4, 1757 Halden</span></li>
+        <li><i class="fa-solid fa-phone"></i> <span itemprop="telephone">69 60 80 00</span></li>
+        <li><i class="fa-solid fa-envelope"></i> <span itemprop="email">postmottak@hiof.no</span></li>
+      </ul>
+  </article>
+
+  <section itemscope itemtype="http://schema.org/Map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765434243!2d11.
+    35022837737479!3d59.12925022701983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464
+    412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v17012
+    26037607!5m2!1sno!2sno" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade" itemprop="embedUrl">
+    </iframe>
+  </section>
+</div>   
+
+<footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+  <a href="index.html" itemprop="url">
+    <img class="nav-image" src="img/logo.png" alt="Friluftsfokus-logo" itemprop="logo" />
+  </a>
+    <h6 itemprop="copyrightHolder">Companyrights Companyname 2023</h6>
+<section class="icons">
+  <a href="https://www.facebook.com/" target="_blank" itemprop="sameAs"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/" target="_blank" itemprop="sameAs"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/" target="_blank" itemprop="sameAs"><i class="fab fa-linkedin"></i></a>
+  </section>
+</footer>
+
+</div>
+</body>
+</html>

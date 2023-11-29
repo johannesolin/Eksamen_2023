@@ -1,0 +1,14 @@
+/** Global reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "header" auto
+    "main" 1fr
+    "footer" auto / 100%;
+  min-height: 100vh;
+}
